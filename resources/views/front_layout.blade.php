@@ -11,12 +11,13 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 
   </head>
   <body>
     @include('front/header')
-    <h1>front</h1>
+    <h1 class="body">front</h1>
     @include('front/footer')
   </body>
 </html>
