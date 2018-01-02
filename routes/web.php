@@ -17,3 +17,7 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('backend_layout');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
