@@ -68,35 +68,22 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src={{asset('images/vendor/admin-lte/dist/user2-160x160.jpg')}} class="user-image" alt="User Image">
-                  <span class="hidden-xs">Alexander Pierce</span>
+                  <span>Loged in as: Alexander Pierce</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <!-- User image -->
-                  {{-- <li class="user-header"> --}}
-                  {{--   <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"> --}}
-
-                  {{--   <p> --}}
-                  {{--   Alexander Pierce - Web Developer --}}
-                  {{--   <small>Member since Nov. 2012</small> --}}
-                  {{--   </p> --}}
-                  {{-- </li> --}}
                   <!-- Menu Footer-->
                   <li class="user-footer">
-                    <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
-                    </div>
-                    <div class="pull-right">
-                      <a href="{{ route('logout') }}"
+                    <a href="#" class="btn btn-default btn-flat"><span class="fa fa-user"></span> Profile </a>
+                      <a href="{{ route('logout') }}" class="btn btn-default btn-flat"
                          onclick="event.preventDefault();
                          document.getElementById('logout-form').submit();">
-                        Logout
+                        <span class="fa fa-sign-out"></span> Sign out 
                       </a>
 
                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         {{ csrf_field() }}
                       </form>
-                    </div>
+
                   </li>
                 </ul>
               </li>
