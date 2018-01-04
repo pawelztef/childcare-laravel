@@ -51,7 +51,8 @@
         <!-- User Account: style can be found in dropdown.less -->
         <li class="dropdown user user-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <span>Loged in as: Alexander Pierce</span>
+            {{-- <span>Loged in as: Alexander Pierce</span> --}}
+            <span>Loged in as: {{ auth()->user()->name }}</span>
           </a>
           <ul class="dropdown-menu">
             <!-- Menu Footer-->
