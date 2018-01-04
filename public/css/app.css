@@ -290,7 +290,7 @@ a:focus {
   transition: width 0.3s ease-in-out;
   display: block;
   float: left;
-  height: 50px;
+  height: 52px;
   font-size: 20px;
   line-height: 50px;
   text-align: center;
@@ -316,6 +316,7 @@ a:focus {
 .content-header > h1 {
   margin: 0;
   font-size: 24px;
+  display: inline;
 }
 .content-header > h1 > small {
   font-size: 15px;
@@ -18813,5 +18814,34 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+a.dropdown-toggle {
+  height: 52px;
+}
+
+#users-table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+i.small.fa.fa-chevron-right {
+  position: relative;
+  bottom: 2px;
+  margin-right: 3px;
+}
+
+a#btn-register-user {
+  position: relative;
+  bottom: 5px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #666 !important;
+}
+
+li.active > span {
+  background: #eee !important;
+  border-color: #dadada !important;
 }
 

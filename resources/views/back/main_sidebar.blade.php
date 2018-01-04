@@ -59,7 +59,7 @@
         </a>
       </li>
       <li>
-        <a href="../widgets.html">
+        <a href="/admin/users">
           <i class="fa fa-users"></i> <span>Users</span>
           <span class="pull-right-container">
           </span>
