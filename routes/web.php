@@ -12,10 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('front_layout');
+    return view('layouts/front_layout');
 });
 Route::get('/admin', function () {
-    return view('backend_layout');
+    return view('layouts/backend_layout');
 });
 
 Auth::routes();
