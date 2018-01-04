@@ -17,6 +17,8 @@ class UsersController extends Controller
     $users = User::orderBy('created_at', 'desc')->paginate(10);
     return view('back.users.index')->with('users', $users);
   }
+
+
   public function destroy($id)
   {
     $user = User::find($id);
