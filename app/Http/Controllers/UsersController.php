@@ -14,14 +14,13 @@ class UsersController extends Controller
   }
 
   public function index() {
-    $users = User::orderBy('created_at', 'desc')->paginate(1);
+    $users = User::orderBy('created_at', 'desc')->paginate(10);
     return view('back.users.index')->with('users', $users);
   }
   public function destroy($id)
   {
     $user = User::find($id);
     $user->delete();
-    /* return redirect("/dashboard")->with("success", "Post Removed"); */
     return redirect("/admin/users");
   }
 

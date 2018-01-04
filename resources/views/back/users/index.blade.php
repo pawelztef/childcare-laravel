@@ -29,10 +29,10 @@
                     <td>{{$user->name}}</td>
                     <td>{{$user->email}}</td>
                     <td>
-                      {{-- {!! Form::open(['action' => ['UsersController@destroy', $user->id], 'method' => 'POST']) !!} --}}
-                      {{-- {{ Form::hidden('_method', 'DELETE') }} --}}
-                      {{-- {{ Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) }} --}}
-                      {{-- {!! Form::close() !!} --}}
+                      {!! Form::open(['action' => ['UsersController@destroy', $user->id], 'method' => 'POST']) !!}
+                      {{ Form::hidden('_method', 'DELETE') }}
+                      {{ Form::submit('Delete', ['class' => 'btn btn-flat btn-danger btn-xs']) }}
+                      {!! Form::close() !!}
                     </td>
                   </tr>
                 @endforeach
