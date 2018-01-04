@@ -26,7 +26,7 @@
       <!-- Content Wrapper -->
       <div class="content-wrapper">
         <!-- content -->
-        @yield('contnent') 
+        @yield('content') 
       </div>
 
       <!-- footer -->
