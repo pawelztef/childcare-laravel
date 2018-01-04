@@ -17,7 +17,7 @@
           <!-- /.box-header -->
           <!-- form start -->
           <div class="panel-body">
-            <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+            <form class="form-horizontal" enctype="multipart/true" method="POST" action="{{ route('register') }}">
               {{ csrf_field() }}
 
               <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -67,6 +67,14 @@
 
                 <div class="col-md-6">
                   <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="profile-image" class="col-md-2 control-label">Profile Image</label>
+
+                <div class="col-md-6">
+                  {{Form::file('cover_image')}}
+                  {{-- <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required> --}}
                 </div>
               </div>
 
