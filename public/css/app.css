@@ -18849,3 +18849,15 @@ li.active > span {
   padding-top: 0px !important;
 }
 
+.delete-form {
+  display: inline-block;
+}
+
+.profile-image-con {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 180px;
+  display: block;
+  margin-top: 1px;
+}
+
