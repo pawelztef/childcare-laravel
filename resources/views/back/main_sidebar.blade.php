@@ -4,15 +4,15 @@
     <!-- Sidebar user panel -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src={{asset("images/vendor/admin-lte/dist/user2-160x160.jpg")}} class="img-circle" alt="User Image">
+        <img src="/storage/profile_images/{{Auth::user()->profile_image}}" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
-        <p>Alexander Pierce</p>
+        <p>{{Auth::user()->name}}</p>
       </div>
     </div>
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
-      <li class="header"></li>
+      <li class="header">Main Navigation</li>
       {{-- <li class="header">MAIN NAVIGATION</li> --}}
       <li class="treeview">
         <a href="#">

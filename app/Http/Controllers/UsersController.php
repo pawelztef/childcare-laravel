@@ -39,7 +39,9 @@ class UsersController extends Controller
       $path = $request->file('profile_image')->storeAs('public/profile_images', $fileNameToStore);
       $user->profile_image = $fileNameToStore;
     } else {
-      $user->profile_image = 'noimage.png';
+      if(empty($user->profile_image)) {
+        $user->profile_image = 'noimage.png';
+      }
     }
     $user->save();
     return redirect('/admin/users');

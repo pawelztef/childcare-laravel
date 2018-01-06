@@ -18861,3 +18861,17 @@ li.active > span {
   margin-top: 1px;
 }
 
+.user-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 0px;
+}
+
+li.header {
+  color: #b8c7ce !important;
+}
+

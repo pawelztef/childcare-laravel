@@ -70,16 +70,8 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="profile-image" class="col-md-2 control-label">Profile Image</label>
-
-                <div class="col-md-6">
-                  {{Form::file('cover_image')}}
-                  {{-- <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required> --}}
-                </div>
-              </div>
-
-              <div class="form-group">
                 <div class="col-md-6 col-md-offset-2">
+                  <a href="/admin/users" class="btn bg-orange btn-flat">Cancel</a>
                   <button type="submit" class="btn btn-flat bg-orange">
                     Register
                   </button>
