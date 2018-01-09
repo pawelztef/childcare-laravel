@@ -14,6 +14,7 @@ class AddFieldsToSettingsTable extends Migration
   public function up()
   {
     Schema::table('settings', function (Blueprint $table) {
+      $table->string('site_name');
       $table->string('catchphrase_line1');
       $table->string('catchphrase_line2');
       $table->string('address_line1');
@@ -22,10 +23,15 @@ class AddFieldsToSettingsTable extends Migration
       $table->string('county');
       $table->string('code');
       $table->string('icon1');
+      $table->string('url_icon1');
       $table->string('icon2');
+      $table->string('url_icon2');
       $table->string('icon3');
+      $table->string('url_icon3');
       $table->string('icon4');
+      $table->string('url_icon4');
       $table->string('icon5');
+      $table->string('url_icon5');
     });
   }
 
@@ -37,6 +43,7 @@ class AddFieldsToSettingsTable extends Migration
   public function down()
   {
     Schema::table('settings', function (Blueprint $table) {
+      $table->dropColumn('site_name');
       $table->dropColumn('catchphrase_line1');
       $table->dropColumn('catchphrase_line2');
       $table->dropColumn('address_line1');
@@ -45,10 +52,15 @@ class AddFieldsToSettingsTable extends Migration
       $table->dropColumn('county');
       $table->dropColumn('code');
       $table->dropColumn('icon1');
+      $table->dropColumn('url_icon1');
       $table->dropColumn('icon2');
+      $table->dropColumn('url_icon2');
       $table->dropColumn('icon3');
+      $table->dropColumn('url_icon3');
       $table->dropColumn('icon4');
+      $table->dropColumn('url_icon4');
       $table->dropColumn('icon5');
+      $table->dropColumn('url_icon5');
     });
   }
 }

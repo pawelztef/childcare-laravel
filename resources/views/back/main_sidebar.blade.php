@@ -66,7 +66,7 @@
         </a>
       </li>
       <li>
-        <a href="../widgets.html">
+        <a href="/admin/settings/1/edit">
           <i class="fa fa-gears"></i> <span>Settings</span>
           <span class="pull-right-container">
           </span>
