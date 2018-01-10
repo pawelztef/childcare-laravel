@@ -13,7 +13,7 @@ class DashboardController extends Controller
 
   public function index()
   {
-    return view('layouts.backend_layout');
+    return view('back.dashboard');
   }
 
 }
