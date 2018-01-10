@@ -51,13 +51,32 @@
                   </div>
                 </div>
                 <div class="tab-pane" id="tab_2">
-                  The European languages are members of the same family. Their separate existence is a myth.
-                  For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
-                  in their grammar, their pronunciation and their most common words. Everyone realizes why a
-                  new common language would be desirable: one could refuse to pay expensive translators. To
-                  achieve this, it would be necessary to have uniform grammar, pronunciation and more common
-                  words. If several languages coalesce, the grammar of the resulting language is more simple
-                  and regular than that of the individual languages.
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                      <div class="row">
+                        <div class="col-md-6">
+                          {{ Form::label('address_line1', 'Address line 1', ['class'=>'control-label']) }}
+                          {{ Form::text('address_line1', $settings->address_line1, ['class'=>'form-control', 'placeholder'=>'']) }}
+                        </div>
+                        <div class="col-md-6">
+                          {{ Form::label('address_line2', 'Address line 2', ['class'=>'control-label']) }}
+                          {{ Form::text('address_line2', $settings->address_line2, ['class'=>'form-control']) }}
+                        </div>
+                        <div class='col-md-4'>
+                          {{ Form::label('town', 'Town', ['class'=>'control-label']) }}
+                          {{ Form::text('town', $settings->town, ['class'=>'form-control']) }}
+                        </div>
+                        <div class='col-md-4'>
+                          {{ Form::label('county', 'County', ['class'=>'control-label']) }}
+                          {{ Form::text('county', $settings->county, ['class'=>'form-control']) }}
+                        </div>
+                        <div class='col-md-4'>
+                          {{ Form::label('code', 'Postal code', ['class'=>'control-label']) }}
+                          {{ Form::text('code', $settings->code, ['class'=>'form-control']) }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="tab-pane" id="tab_3">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
