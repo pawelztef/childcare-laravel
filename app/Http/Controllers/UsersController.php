@@ -32,16 +32,9 @@ class UsersController extends Controller
     $user = User::find($id);
     $user->fill($request->all());
     if($request->hasFile('profile_image')) {
-      $fileWithExt = $request->file('profile_image')->getClientOriginalName();
-      $fileName = pathinfo($fileWithExt, PATHINFO_FILENAME);
-      $ext = $request->file('profile_image')->getClientOriginalExtension();
-      $fileNameToStore = $fileName.'_'.time().'_'.$ext;
-      $path = $request->file('profile_image')->storeAs('public/profile_images', $fileNameToStore);
-      $user->profile_image = $fileNameToStore;
-    } else {
-      if(empty($user->profile_image)) {
-        $user->profile_image = 'noimage.png';
-      }
+      $user->profile_image = parent::save_image($request, $user, 'profile_image', 'public/profile_images');
+    } elseif (empty($user->profile_image)) {
+      $user->profile_image = 'noimage.png';
     }
     $user->save();
     return redirect('/admin/users');

@@ -8,9 +8,10 @@
       <div class="col-md-12">
         <div class="box">
           <div class="box-header with-border">
-            <h3 class="box-title">Users Table</h3>
+            <h3 class="box-title">Page Imgages</h3>
           </div>
           <img src="/storage/logo_images/{{$site_settings->logo_image}}" alt="">
+          <img src="/storage/favicon_images/{{$site_settings->favicon_image}}" alt="">
         </div>
       </div>
     </div>

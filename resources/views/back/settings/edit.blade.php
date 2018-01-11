@@ -43,7 +43,10 @@
                             {{ Form::text('catchphrase_line1', $settings->catchphrase_line1, ['class' => 'form-control', 'placeholder' => ''])}}
                             {{ Form::label('catchphrase_line2', 'Catchphrase line 2',['class'=>'control-label '])}}
                             {{ Form::text('catchphrase_line2', $settings->catchphrase_line2, ['class' => 'form-control', 'placeholder' => ''])}}
-                            {{Form::file('logo_image')}}
+                            {{ Form::label('logo_image', 'Logo image', ['class'=>'control-label']) }}
+                            {{ Form::file('logo_image')}}
+                            {{ Form::label('favicon_image', 'Favicon image', ['class'=>'control-label']) }}
+                            {{ Form::file('favicon_image')}}
                           </div>
                         </div>
                       </div>
