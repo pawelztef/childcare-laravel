@@ -16,7 +16,9 @@ Route::get('/admin/register', 'Auth\RegisterController@showRegistrationForm')->n
 Route::get('/', function () {
   return view('layouts/front_layout');
 });
-
 Route::get('/admin/dashboard', 'DashboardController@index');
+Route::get('/admin', 'DashboardController@index');
 Route::resource('/admin/users', 'UsersController');
+Route::resource('/admin/settings', 'SettingsController');
+Route::get('/admin/settings', 'SettingsController@edit');
 

@@ -1,7 +1,7 @@
 @include('front/nav')
 <header>
   <div class="img-wrap">
-    <img class="img-fluid" src="http://www.aceshowbiz.com/images/still/winnie_the_pooh12.jpg" alt="">
+    <img class="img-fluid" src="/storage/logo_images/{{$site_settings->logo_image}}">
   </div>
 
   <div class="header-contents">

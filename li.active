@@ -1,0 +1,40 @@
+public/css/app.css:2575:1:.nav-tabs-custom {
+public/css/app.css:2582:1:.nav-tabs-custom > .nav-tabs {
+public/css/app.css:2588:1:.nav-tabs-custom > .nav-tabs > li {
+public/css/app.css:2593:1:.nav-tabs-custom > .nav-tabs > li.disabled > a {
+public/css/app.css:2596:1:.nav-tabs-custom > .nav-tabs > li > a {
+public/css/app.css:2600:1:.nav-tabs-custom > .nav-tabs > li > a.text-muted {
+public/css/app.css:2603:1:.nav-tabs-custom > .nav-tabs > li > a,
+public/css/app.css:2604:1:.nav-tabs-custom > .nav-tabs > li > a:hover {
+public/css/app.css:2608:1:.nav-tabs-custom > .nav-tabs > li > a:hover {
+public/css/app.css:2611:1:.nav-tabs-custom > .nav-tabs > li:not(.active) > a:hover,
+public/css/app.css:2612:1:.nav-tabs-custom > .nav-tabs > li:not(.active) > a:focus,
+public/css/app.css:2613:1:.nav-tabs-custom > .nav-tabs > li:not(.active) > a:active {
+public/css/app.css:2616:1:.nav-tabs-custom > .nav-tabs > li.active {
+public/css/app.css:2619:1:.nav-tabs-custom > .nav-tabs > li.active > a,
+public/css/app.css:2620:1:.nav-tabs-custom > .nav-tabs > li.active:hover > a {
+public/css/app.css:2624:1:.nav-tabs-custom > .nav-tabs > li.active > a {
+public/css/app.css:2629:1:.nav-tabs-custom > .nav-tabs > li:first-of-type {
+public/css/app.css:2632:1:.nav-tabs-custom > .nav-tabs > li:first-of-type.active > a {
+public/css/app.css:2635:1:.nav-tabs-custom > .nav-tabs.pull-right {
+public/css/app.css:2638:1:.nav-tabs-custom > .nav-tabs.pull-right > li {
+public/css/app.css:2641:1:.nav-tabs-custom > .nav-tabs.pull-right > li:first-of-type {
+public/css/app.css:2644:1:.nav-tabs-custom > .nav-tabs.pull-right > li:first-of-type > a {
+public/css/app.css:2647:1:.nav-tabs-custom > .nav-tabs.pull-right > li:first-of-type.active > a {
+public/css/app.css:2651:1:.nav-tabs-custom > .nav-tabs > li.header {
+public/css/app.css:2657:1:.nav-tabs-custom > .nav-tabs > li.header > .fa,
+public/css/app.css:2658:1:.nav-tabs-custom > .nav-tabs > li.header > .glyphicon,
+public/css/app.css:2659:1:.nav-tabs-custom > .nav-tabs > li.header > .ion {
+public/css/app.css:2662:1:.nav-tabs-custom > .tab-content {
+public/css/app.css:2668:1:.nav-tabs-custom .dropdown.open > a:active,
+public/css/app.css:2669:1:.nav-tabs-custom .dropdown.open > a:focus {
+public/css/app.css:2673:1:.nav-tabs-custom.tab-primary > .nav-tabs > li.active {
+public/css/app.css:2676:1:.nav-tabs-custom.tab-info > .nav-tabs > li.active {
+public/css/app.css:2679:1:.nav-tabs-custom.tab-danger > .nav-tabs > li.active {
+public/css/app.css:2682:1:.nav-tabs-custom.tab-warning > .nav-tabs > li.active {
+public/css/app.css:2685:1:.nav-tabs-custom.tab-success > .nav-tabs > li.active {
+public/css/app.css:2688:1:.nav-tabs-custom.tab-default > .nav-tabs > li.active {
+resources/assets/sass/custom.scss:46:1:.nav-tabs-custom > .nav-tabs > li.active {
+resources/views/back/settings/edit.blade.php:21:26:              <div class="nav-tabs-custom">
+resources/views/back/settings/edit.blade.php:31:46:                    the custom wrapper <code>.nav-tabs-custom</code> to achieve this style.</p>
+resources/views/back/settings/edit.blade.php:64:19:              <!-- nav-tabs-custom -->
